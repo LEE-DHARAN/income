@@ -1,0 +1,211 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+/* Main Container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-text,
+.input-number,
+.input-select {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-text:focus,
+.input-number:focus,
+.input-select:focus {
+    border-color: #3182ce;
+}
+
+.button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.filter-section input {
+    margin-right: 5px;
+}
+
+.filter-section label {
+    cursor: pointer;
+}
+
+/* Balance Section */
+.balance-section {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 30px;
+}
+
+.balance-section p {
+    margin: 5px 0;
+}
+
+.balance-amount {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #2d3748;
+}
+
+/* Entry List */
+.entry-list {
+    margin-bottom: 30px;
+}
+
+.entry-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1.1rem;
+}
+
+.entry-item span {
+    color: #2d3748;
+}
+
+.income {
+    color: #48bb78; /* Green for income */
+    font-weight: bold;
+}
+
+.expense {
+    color: #f56565; /* Red for expense */
+    font-weight: bold;
+}
+
+.entry-item button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.entry-item button.edit {
+    background-color: #3182ce;
+    color: white;
+}
+
+.entry-item button.edit:hover {
+    background-color: #2b6cb0;
+}
+
+.entry-item button.delete {
+    background-color: #f56565;
+    color: white;
+}
+
+.entry-item button.delete:hover {
+    background-color: #c53030;
+}
+
+/* Reset Button */
+.reset-button-container {
+    margin-top: 20px;
+}
+
+.reset-button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reset-button:hover {
+    background-color: #c53030;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    .input-text,
+    .input-number,
+    .input-select {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+  
